@@ -4275,10 +4275,6 @@ class IlsangDistributionBot(commands.AutoShardedBot):
 						bossData[i][6] = hello[len(tmp_msg):]
 						await self.get_channel(channel).send('< ' + bossData[i][0] + ' [ ' + bossData[i][6] + ' ] 메모등록 완료>', tts=False)
 						
-					if message.content.startswith(bossData[i][0] +'메모삭제'):
-						
-						bossData[i][6] = ''
-						await self.get_channel(channel).send('< ' + bossData[i][0] + ' 메모삭제 완료>', tts=False)
 
 		await self.process_commands(ori_msg)
 
